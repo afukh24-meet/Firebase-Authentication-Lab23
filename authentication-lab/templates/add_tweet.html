@@ -6,5 +6,26 @@
 </head>
 <body>
     Great Job!
+    <form method="post" action="/add_tweet">
+
+        <div>
+            <label>title</label>
+            <div>
+                <input type="text"  name="title" id="title" required>
+            </div>
+        </div>
+        <div>
+            <label>text</label>
+            <div>
+                <input type="text"  name="text" id="text" required maxlength="280">
+            </div>
+        </div>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+    <a href="{{url_for('signout')}}"><button type="button"> signout! </button></a>
+
+
+
 </body>
 </html>
